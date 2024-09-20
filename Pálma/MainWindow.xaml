@@ -7,29 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="30,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="161"/>
-        <TextBox HorizontalAlignment="Left" Margin="30,54,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="161"/>
-        <TextBox HorizontalAlignment="Left" Margin="30,93,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="50,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="175,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="30,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="50,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="175,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="50,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="30,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="155,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="462,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="462,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="462,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="462,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="616,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="616,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="616,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="616,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <CheckBox Margin="561,217,218,0" VerticalAlignment="Top" Height="18"/>
-        <TextBox HorizontalAlignment="Left" Margin="616,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="90"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="46,258,0,0" VerticalAlignment="Top" Width="145"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="531,268,0,0" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="textboxRandomDessert" HorizontalAlignment="Left" Margin="30,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" Height="23"/>
+        <TextBox x:Name="textboxHowManyAwardWinnerDesserts" HorizontalAlignment="Left" Margin="30,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="245" Height="23"/>
+        <TextBox HorizontalAlignment="Left" Margin="30,93,0,0" TextWrapping="Wrap" Text="Legdrágább desszertünk:" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="textboxMostExpensiveDessertName" HorizontalAlignment="Left" Margin="50,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="203"/>
+        <TextBox x:Name="textboxMostExpensiveDessertPriceAndUnit" HorizontalAlignment="Left" Margin="258,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <TextBox HorizontalAlignment="Left" Margin="30,152,0,0" TextWrapping="Wrap" Text="Legolcsóbb desszertünk:" VerticalAlignment="Top" Width="205"/>
+        <TextBox HorizontalAlignment="Left" Margin="50,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxLeastExpensiveDessertPriceAndUnit" HorizontalAlignment="Left" Margin="258,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="textboxLeastExpensiveDessertName" HorizontalAlignment="Left" Margin="50,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="203"/>
+        <TextBox HorizontalAlignment="Left" Margin="30,0,0,0" TextWrapping="Wrap" Text="Típusa:" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="textboxSearchedDessertUserInput" HorizontalAlignment="Left" Margin="155,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="462,102,0,0" TextWrapping="Wrap" Text="Név:" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="462,125,0,0" TextWrapping="Wrap" Text="Típus:" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="462,152,0,0" TextWrapping="Wrap" Text="Egység:" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="462,175,0,0" TextWrapping="Wrap" Text="Ár:" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxNewDessertFromUserInputName" HorizontalAlignment="Left" Margin="616,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxNewDessertFromUserInputType" HorizontalAlignment="Left" Margin="616,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxNewDessertFromUserInputUnit" HorizontalAlignment="Left" Margin="616,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxNewDessertFromUserInputPrice" HorizontalAlignment="Left" Margin="616,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="checkboxNewDessertFromUserInputHasBeenAwarded" Margin="561,217,196,0" VerticalAlignment="Top" Height="18" RenderTransformOrigin="-1.059,0.414"/>
+        <TextBox HorizontalAlignment="Left" Margin="616,217,0,0" TextWrapping="Wrap" Text="Díjazott" VerticalAlignment="Top" Width="90"/>
+        <Button x:Name="btnBidSave" Content="Árajánlat mentése" HorizontalAlignment="Left" Margin="46,258,0,0" VerticalAlignment="Top" Width="145" Click="btnBidSave_Click"/>
+        <Button Content="Új süti felvétele" HorizontalAlignment="Left" Margin="531,268,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click"/>
 
     </Grid>
 </Window>

@@ -24,7 +24,7 @@ namespace Pálma
 
         public override string ToString()
         {
-            //return $"Desszert neve: {DessertName}";
+            return $"Desszert neve: {DessertName}, desszert típusa: {DessertType}, volt díjazott: {(HasDessertBeenAwarded ? "igen" : "nem")}, Desszert ára: {DessertPrice}, Desszert egysége: {DessertUnit}";
         }
     }   
 }
