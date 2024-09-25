@@ -113,5 +113,10 @@ namespace Pálma
                 MessageBox.Show("A desszert hozzáadásra került.");
             }
         }
+
+        private void CheckBox_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
