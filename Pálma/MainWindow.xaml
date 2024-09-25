@@ -15,20 +15,39 @@
         <TextBox HorizontalAlignment="Left" Margin="30,152,0,0" TextWrapping="Wrap" Text="Legolcsóbb desszertünk:" VerticalAlignment="Top" Width="205" IsEnabled="False"/>
         <TextBox x:Name="textboxLeastExpensiveDessertPriceAndUnit" HorizontalAlignment="Left" Margin="258,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
         <TextBox x:Name="textboxLeastExpensiveDessertName" HorizontalAlignment="Left" Margin="50,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="203" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Margin="30,0,0,0" TextWrapping="Wrap" Text="Típusa:" VerticalAlignment="Center" Width="120" IsEnabled="False"/>
-        <TextBox x:Name="textboxSearchedDessertUserInput" HorizontalAlignment="Left" Margin="155,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="462,102,0,0" TextWrapping="Wrap" Text="Név:" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Margin="462,125,0,0" TextWrapping="Wrap" Text="Típus:" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Margin="462,152,0,0" TextWrapping="Wrap" Text="Egység:" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Margin="462,175,0,0" TextWrapping="Wrap" Text="Ár:" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox x:Name="textboxNewDessertFromUserInputName" HorizontalAlignment="Left" Margin="616,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textboxNewDessertFromUserInputType" HorizontalAlignment="Left" Margin="616,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textboxNewDessertFromUserInputUnit" HorizontalAlignment="Left" Margin="616,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textboxNewDessertFromUserInputPrice" HorizontalAlignment="Left" Margin="616,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <CheckBox x:Name="checkboxNewDessertFromUserInputHasBeenAwarded" Margin="561,217,196,0" VerticalAlignment="Top" Height="18" RenderTransformOrigin="-1.059,0.414"/>
-        <TextBox HorizontalAlignment="Left" Margin="616,217,0,0" TextWrapping="Wrap" Text="Díjazott" VerticalAlignment="Top" Width="90" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="32,199,0,0" TextWrapping="Wrap" Text="Típusa:" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="textboxSearchedDessertUserInput" HorizontalAlignment="Left" Margin="157,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnBidSave" Content="Árajánlat mentése" HorizontalAlignment="Left" Margin="46,258,0,0" VerticalAlignment="Top" Width="145" Click="btnBidSave_Click"/>
-        <Button Content="Új süti felvétele" HorizontalAlignment="Left" Margin="531,268,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click"/>
+        <Grid HorizontalAlignment="Left" Height="186" Margin="462,102,0,0" VerticalAlignment="Top" Width="274">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Stretch" Height="133" VerticalAlignment="Top" Width="274" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBox TextWrapping="Wrap" Text="Név:" Width="120" IsEnabled="False" Grid.Column="0" Grid.Row="0" Margin="5,5,5,5"/>
+                <TextBox TextWrapping="Wrap" Text="Típus:" Width="120" IsEnabled="False" Grid.Column="0" Grid.Row="1" Margin="5,5,5,5"/>
+                <TextBox TextWrapping="Wrap" Text="Egység:" Width="120" IsEnabled="False" Grid.Column="0" Grid.Row="2" Margin="5,5,5,5"/>
+                <TextBox TextWrapping="Wrap" Text="Ár:" Width="120" IsEnabled="False" Grid.Column="0" Grid.Row="3" Margin="5,5,5,5"/>
+                <CheckBox x:Name="checkboxNewDessertFromUserInputHasBeenAwarded" Height="18" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" Margin="113,5,0,4"/>
+                <TextBox x:Name="textboxNewDessertFromUserInputName" TextWrapping="Wrap" Text="" Width="120" Grid.Column="1" Grid.Row="0" Margin="5,5,5,5"/>
+                <TextBox x:Name="textboxNewDessertFromUserInputType" TextWrapping="Wrap" Text="" Width="120" Grid.Column="1" Grid.Row="1" Margin="5,5,5,5"/>
+                <TextBox x:Name="textboxNewDessertFromUserInputUnit" TextWrapping="Wrap" Text="" Width="120" Grid.Column="1" Grid.Row="2" Margin="5,5,5,5"/>
+                <TextBox x:Name="textboxNewDessertFromUserInputPrice" TextWrapping="Wrap" Text="" Width="120" Grid.Column="1" Grid.Row="3" Margin="5,5,5,5"/>
+                <TextBox TextWrapping="Wrap" Text="Díjazott" Width="90" IsEnabled="False" Grid.Column="1" Grid.Row="4" Margin="10,5,37,5"/>
+            </Grid>
+            <Button Content="Új süti felvétele" HorizontalAlignment="Center" VerticalAlignment="Top" Width="145" Click="Button_Click" Grid.Row="1" Margin="0,10,0,0"/>
+        </Grid>
 
     </Grid>
 </Window>
